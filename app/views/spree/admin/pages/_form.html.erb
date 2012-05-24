@@ -1,39 +1,38 @@
 <%- locals = {:f => f} %>
-<%= hook :admin_page_form_fields, locals do %>
-  <%= f.field_container :title do %>
-    <%= f.label :title, t("title") %><br />
-    <%= f.text_field :title  %>
-    <%= error_message_on :page, :title %>
-  <% end %>
-  
-  <%= f.field_container :meta_keywords do %>
-    <%= f.label :meta_keywords, t("meta_keywords") %><br />
-    <%= f.text_area :meta_keywords %>
-    <%= error_message_on :page, :meta_keywords %>
-  <% end %>
-  
-  <%= f.field_container :meta_description do %>
-    <%= f.label :meta_description, t("meta_description") %><br />
-    <%= f.text_area :meta_description %>
-    <%= error_message_on :page, :meta_description %>
-  <% end %>
-  
-  <%= f.field_container :body do %>
-    <%= f.label :body, t("body") %><br />
-    <%= f.text_area :body %>
-    <%= error_message_on :page, :body %>
-  <% end %>
-  
-  <%= f.field_container :permalink do %>
-    <%= f.label :permalink, t("permalink") %><br />
-    <%= f.text_field :permalink  %>
-    <%= error_message_on :page, :permalink %>
-  <% end %>
-  
-  <%= f.field_container :published do %>
-    <%= f.label :published, t("published") %><br />
-    <%= f.check_box :published  %>
-    <%= error_message_on :page, :published %>
-  <% end %>
-  
+
+<%= f.field_container :title do %>
+	<%= f.label :title, t("title") %><br />
+	<%= f.text_field :title  %>
+	<%= error_message_on :page, :title %>
 <% end %>
+  
+<%= f.field_container :meta_keywords do %>
+	<%= f.label :meta_keywords, t("meta_keywords") %><br />
+	<%= f.text_area :meta_keywords %>
+	<%= error_message_on :page, :meta_keywords %>
+<% end %>
+  
+<%= f.field_container :meta_description do %>
+	<%= f.label :meta_description, t("meta_description") %><br />
+	<%= f.text_area :meta_description %>
+	<%= error_message_on :page, :meta_description %>
+<% end %>
+  
+<%= f.field_container :body do %>
+	<%= f.label :body, t("body") %><br />
+	<%= f.text_area :body %>
+	<%= error_message_on :page, :body %>
+<% end %>
+  
+<%= f.field_container :permalink do %>
+	<%= f.label :permalink, t("permalink") %><br />
+	<%= f.text_field :permalink  %>
+	<%= error_message_on :page, :permalink %>
+<% end %>
+  
+<%= f.field_container :published do %>
+	<%= f.label :published, t("published") %><br />
+	<%= f.check_box :published  %>
+	<%= error_message_on :page, :published %>
+<% end %>
+  
